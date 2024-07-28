@@ -1,0 +1,332 @@
+*{
+   margin:0;
+   padding:0;
+   box-sizing:border-box;
+   font-family:"Gilroy";
+   color: #fff;
+}
+
+html,body{
+   height: 100%;
+   width: 100%;
+}
+.cursor{
+   align-items: center;
+   height: 15px;
+   width: 15px;
+   border-radius: 50%;
+   position: fixed;
+   background-color:#EDBFFF;
+   z-index: 8;
+   mix-blend-mode: difference;
+   transition: all ease 0.2s;
+   transition :background-image ease 0.5s;
+}
+#purple{
+   height: 100vh;
+   width: 100vw;
+   top: 0;
+   position: fixed;
+   z-index: 100;
+   background-color: #EDBFFF;
+   opacity: 0;
+   display: none;
+   transition: opacity ease 1s;
+}
+.main{
+   background-color: #0f0d0d;
+   cursor: none;
+}
+.page1{
+   min-height:100vh;
+   width:100%;
+   position: relative;
+   z-index: 9;
+   padding-top: 12vw;
+}
+#nav{
+   height: 55px;
+   width:100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 30px;
+   mix-blend-mode: difference;
+   z-index: 102;
+   position: fixed;
+}
+
+#nav img{
+   height: 26px;
+
+}
+#nav-part2{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 24px;
+}
+#circle{
+   height: 20px;
+   width: 20px;
+   border-radius: 50%;
+   background-color: #fff;
+
+}
+#nav h4{
+   font-size: 13px;
+   font-weight: 500;
+   font-family: PP mori;
+   text-transform: uppercase;
+}
+#nav h4:nth-child(1){
+   border-bottom: 1.5px solid #fff;
+}
+
+.page1 h1{
+   font-size: 8vw;
+   font-weight: 300;
+   font-family: PP mori;
+   margin-left: 6vw;
+   transform-origin: left;
+}
+.page1 h2{
+   font-size: 8vw;
+   font-weight: 300;
+   font-family: PP mori;
+   margin-left: 24vw;
+   transform-origin: left;
+}
+
+.page1 video{
+   width: 60%;
+   margin-top: 10vw;
+   position: relative;
+   left: 50%;
+   transform :translate(-50%,0)
+}
+.page2{
+   min-height: 90vh;
+   width: 100%;
+   padding: 100px 5vw;
+   position: relative;
+   z-index: 9;
+   border-bottom: 1.5px solid #111;
+}
+.page2 h1{
+   font-size: 7vw;
+   font-weight: 500;
+   color: #0f0d0d;
+   font-family: PP mori;
+  
+}
+.page2-container{
+   height: 60vh;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   
+}
+.page2-left{
+   width: 38%;
+   margin-top: 3vw;
+}
+.page2-left h2{
+   font-size: 4vw;
+   font-weight: 300;
+   font-family: PP mori;
+   color:#0f0d0d;
+   line-height: 4vw;
+}
+.page2-right{
+   width: 24%;
+   margin-top: 3vw;
+}
+
+.page2-right p{
+   font-size: 20px;
+   font-weight: 300;
+   font-family: PP mori;
+   color:#0f0d0d;
+}
+
+.page2-right button{
+   width: 100%;
+   border-radius: 50px;
+   border: none;
+   padding: 4px 0;
+   color:#0f0d0d;
+   background-color: #EDBFFF;
+   margin-top: 20px;
+}
+.page3{
+   min-height: 130vh;
+   width: 100%;
+   position:relative;
+   z-index: 9;
+   padding-top: 100px;
+}
+.page3 h1{
+   font-size: 6.8vw;
+   font-weight: 300;
+   font-family: PP mori;
+   color:#0f0d0d;
+   margin-left: 100px;
+}
+.page3-part1{
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;
+}
+.page3-part1 img{
+   height: 400px;
+   margin-top: 160px;
+   width: 600px;
+}
+.page3-part1 video{
+   height: 400px;
+   width: 600px;
+   margin-right:0;
+}
+.page4{
+   min-height: 100vh;
+   width: 100%;
+   position: relative;
+   z-index: 9;
+   padding: 140px 100px;
+   position: relative;
+}
+.elem{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   margin-bottom: 10px;
+}
+.elem img{
+   height: 300px;
+   width: 380px;
+   position: absolute;
+   opacity: 0;
+   transition: all ease-out 0.5s;
+   transform: translateY(10)rotate(2deg);
+}
+.elem img:nth-child(1){
+   left: 2%;
+}
+.elem img:nth-child(2){
+   right: 2%;
+}
+.text-div{
+   height: 110px;
+   overflow: hidden;
+}
+.elem h1{
+   font-size: 7.5vw;
+   font-weight: 600;
+   font-family: PP mori;
+   transition: all ease-out 0.5s;
+   z-index: 9;
+}
+.elem:hover h1{
+   transform :translateY(-100%);
+   color: #EDBFFF;
+   z-index: 9;
+}
+.elem:hover img{
+   opacity: 1;
+   transform: translateY(0%) rotate(0deg);
+}
+
+.page5{
+   min-height: 100vh;
+   width: 100%;
+   position: relative;
+   z-index: 9;
+   padding: 50px 80px;
+}
+.page5 h2 {
+   font-size: 4vw;
+   text-transform: uppercase;
+   font-weight: 400;
+   font-family: PP mori;
+   padding: 20px 0px;
+   border-bottom: 1.5px solid #dadada;
+   color: #EDBFFF;
+}
+.box{
+   background-color: #111;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 80px;
+   padding: 0 20px;
+   border-bottom: 1.5px solid #dadada;
+   font-family: PP mori;
+}
+.page5 p{
+   display: flex;
+   font-size: 1vw;
+   font-weight: 500;
+   font-family: PP mori;
+   justify-content: space-between;
+}
+.page5 h3{
+   font-size: 1.5vw;
+   font-weight: 500;
+   font-family: PP mori;
+}
+.page5.box:hover{
+   color: #fff;
+   transition: all 0.5s;
+}
+
+.footer{
+   min-height: 100vh;
+   width: 100%;
+   background-color: #EDBFFF;
+   padding: 10px 90px;
+}
+.footer-1{
+   width: 96%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-bottom: 2px solid black;
+   padding-bottom: 2vw;
+}
+.footer-1 h1{
+   font-size: 3.5vw;
+   color: #0f0d0d;
+   font-family: PP mori;
+}
+.circle{
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   background-color: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: all 0.2s;
+}
+.circle h2{
+   font-size: 1.5vw;
+   color: #0f0d0d;
+}
+.last{
+   height: 100px;
+   width: 100%;
+   align-items: center;
+   padding: 10px 90px;;
+   margin-top: 10px;
+   justify-content: center;
+}
+.last h2{
+   font-family: PP mori;
+   font-size: 2vw;
+   font-weight: 500;
+   color: #0f0d0d;
+   margin-left: 250px;
+}
